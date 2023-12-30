@@ -21,23 +21,24 @@
     "64",
     "napi"
   ],
-  "version": "4.0.10",
+  "version": "4.1.0",
   "license": "MIT",
-  "author": "LWAhonen lwahonen@github",
+  "author": "Kefei Tu tukefei@github",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lwahonen/ref-napi.git"
+    "url": "git@github.com:Tunixer/ref-napi.git"
   },
   "main": "./lib/ref.js",
   "scripts": {
-    "install": "node-gyp-build", 
+    "install": "node-gyp-build",
     "prebuild": "prebuildify -t 12.22.12 -t 13.14.0 -t 14.18.3 -t 14.20.1 -t 14.21.2 -t 15.14.0 -t 16.19.0 -t 17.9.1 -t 18.12.1 -t 19.3.0 --napi --tag-armv --tag-uv --tag-libc"
   },
   "dependencies": {
     "debug": "^4.3.4",
     "get-symbol-from-current-process-h": "^1.0.2",
     "node-addon-api": "^3.2.1",
-    "node-gyp-build": "^4.5.0"
+    "node-gyp-build": "^4.5.0",
+    "ref-struct-di": "^1.1.1"
   },
   "devDependencies": {
     "prebuildify": "^5.0.1",

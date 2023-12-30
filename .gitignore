@@ -1,0 +1,4 @@
+node_modules/
+package-lock.json
+build/
+prebuild/win32-x64/
